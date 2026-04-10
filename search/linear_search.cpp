@@ -16,9 +16,13 @@
  * \param [in] size length of array
  * \param [in] key key value to search for
  * \returns index where the key-value occurs in the array
- * \returns -1 if key-value not found
+ * @returns index of the key if found, otherwise -1
  */
-int LinearSearch(int *array, int size, int key) {
+/**
+ * Time Complexity: O(n)
+ * Space Complexity: O(1)
+ */
+int linearSearch(int *array, int size, int key) {
     for (int i = 0; i < size; ++i) {
         if (array[i] == key) {
             return i;
